@@ -1,5 +1,10 @@
 {
-    "version": 2,
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://task-manager-backend-iota-vert.vercel.app/api/$1"
+      }
+    ],
     "builds": [
       {
         "src": "package.json",
@@ -11,13 +16,6 @@
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/index.html" }
-    ],
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "https://task-manager-backend-iota-vert.vercel.app/api/$1"
-    
-      }
     ]
   }
   
