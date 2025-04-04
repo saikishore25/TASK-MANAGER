@@ -15,7 +15,8 @@
     "rewrites": [
       {
         "source": "/api/(.*)",
-        "destination": ""
+        "destination": "https://task-manager-backend-iota-vert.vercel.app/api/$1"
+    
       }
     ]
   }
